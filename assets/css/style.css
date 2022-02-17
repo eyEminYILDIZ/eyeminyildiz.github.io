@@ -24,11 +24,16 @@ Description: CV, Resume, vCard HTML Template
 /*-----------------------------------------------------------------*/
 /*                      GLOBAL STYLES                              */
 /*-----------------------------------------------------------------*/
+html {
+  height: 100%;
+}
+
 body {
   color: #1a1a1a;
   background-color: gray;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  height: 100%;
 }
 
 h1,
@@ -160,6 +165,7 @@ li {
 /*-----------------------------------------------------------------*/
 .wrapper {
   width: 1000px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -363,6 +369,7 @@ li {
 .main-content {
   background: #fff;
   width: 740px;
+  height: 100%;
 }
 
 .main-content p {
