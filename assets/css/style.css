@@ -369,7 +369,7 @@ li {
 .main-content {
   background: #fff;
   width: 740px;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .main-content p {
