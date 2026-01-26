@@ -533,6 +533,15 @@ li {
 	color: #2c2c2c;
 }
 
+.resume-project {
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0 0 10px;
+	color: #2e2e2e;
+	margin-left: 2rem;
+	margin-top:1rem;
+}
+
 .resume .resume-item span {
 	color: #666;
 	display: block;
