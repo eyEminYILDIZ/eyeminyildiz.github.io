@@ -1,378 +1,427 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Emin YILDIZ - Personal Website</title>
-    <meta name="description" content="Emin YILDIZ - Personal Website" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/images/favicon.png"
-    />
 
-    <!-- STYLESHEETS -->
-    <link
-      rel="stylesheet"
-      href="assets/bootstrap/css/bootstrap.min.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/css/owl.carousel.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/css/owl.theme.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/css/font-awesome.min.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/css/magnific-popup.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/css/style.css"
-      type="text/css"
-      media="all"
-    />
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Emin YILDIZ - Engineering Manager</title>
+  <meta name="description" content="Emin YILDIZ - Engineering Manager Personal CV" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <!-- GOOGLE FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800"
-      rel="stylesheet"
-    />
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #e8e8e8;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+    .cv-wrapper {
+      width: 100%;
+      max-width: 960px;
+      display: flex;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+      background: #fff;
+    }
 
-  <body>
-    <!-- Preloader -->
-    <div class="preloader-outer">
-      <div class="preloader">
-        <div class="lines">
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
+    /* ── LEFT SIDEBAR ── */
+    .sidebar {
+      width: 280px;
+      min-width: 280px;
+      background: #f0f0f0;
+      padding: 36px 28px 36px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 4px solid #ddd;
+      margin-bottom: 28px;
+    }
+
+    .sidebar-section {
+      width: 100%;
+      margin-bottom: 44px;
+    }
+
+    .sidebar-section-title {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #111;
+      margin-bottom: 12px;
+      padding-bottom: 4px;
+      text-align: center;
+    }
+
+    .sidebar p {
+      font-size: 12.5px;
+      color: #333;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .sidebar-meta {
+      margin-top: 14px;
+      text-align: center;
+    }
+
+    .sidebar-meta p {
+      font-size: 12px;
+      color: #222;
+      margin-bottom: 3px;
+    }
+
+    .sidebar-meta strong {
+      font-weight: 700;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      font-size: 13px;
+      color: #111;
+      text-align: center;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .edu-detail {
+      font-size: 12px;
+      color: #444;
+      text-align: center;
+      display: block;
+    }
+
+    .lang-list, .keyword-list {
+      list-style: none;
+      text-align: center;
+    }
+
+    .lang-list li, .keyword-list li {
+      font-size: 12.5px;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    /* ── RIGHT MAIN ── */
+    .main {
+      flex: 1;
+      background: #fff;
+      padding: 36px 40px 40px 40px;
+    }
+
+    .cv-header {
+      padding-bottom: 20px;
+      margin-bottom: 26px;
+    }
+
+    .cv-name {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #111;
+      line-height: 1.1;
+      text-align: center;
+    }
+
+    .cv-title {
+      font-size: 15px;
+      color: #555;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 4px;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .contact-item:hover {
+      color: #111;
+    }
+
+    .contact-item svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      fill: #444;
+    }
+
+    /* ── EXPERIENCE ── */
+    .section-title {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #111;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .job {
+      margin-bottom: 22px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .job-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .job-dates {
+      font-size: 11.5px;
+      color: #555;
+      white-space: nowrap;
+    }
+
+    .job-company {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #333;
+      margin-top: 2px;
+      margin-bottom: 7px;
+    }
+
+    .job-bullets {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .job-bullets li {
+      font-size: 12px;
+      color: #333;
+      line-height: 1.6;
+      padding-left: 14px;
+      position: relative;
+      margin-bottom: 2px;
+    }
+
+    .job-bullets li::before {
+      content: '■';
+      position: absolute;
+      left: 0;
+      font-size: 6px;
+      top: 5px;
+      color: #444;
+    }
+
+    .job + .job {
+      border-top: 1px solid #f0f0f0;
+      padding-top: 18px;
+    }
+
+    @media (max-width: 720px) {
+      .cv-wrapper {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        min-width: unset;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cv-wrapper">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <img src="assets/images/profile.png" alt="Emin YILDIZ" class="profile-img" />
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">About Me</div>
+        <p>
+          I started developing software as a hobby during my high school years.
+          After graduating with a bachelor's degree in Computer Engineering,
+          I worked as a Senior Software Engineer, Engineering Team Lead
+          and Engineering Manager in various companies. I maintain my strong
+          technical skills while also developing myself in the field of engineering
+          management. With my experience in Software Development,
+          Embedded Systems, DevOps and Engineering Management, I focus on
+          doing my job in the best way possible.
+        </p>
+        <div class="sidebar-meta">
+          <p><strong>Location:</strong> Uskudar/Istanbul/Turkey</p>
+          <p><strong>Birth Year:</strong> 1995</p>
+          <p><strong>Military Service:</strong> Done</p>
         </div>
-
-        <div class="loading-text">Loading</div>
       </div>
-    </div>
-    <!-- Preloader end -->
 
-    <!-- Main Wrapper -->
-    <main class="wrapper">
-      <!-- Header -->
-      <header class="header pull-left">
-        <!-- Mobile menu -->
-        <div class="mobile-bar visible-sm visible-xs">
-          <div class="hamburger-menu">
-            <div class="bar"></div>
-          </div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Education</div>
+        <span class="edu-degree">Computer Engineering</span>
+        <span class="edu-detail">Bachelor's Degree, 2014–2019</span>
+        <span class="edu-detail">Kocaeli University</span>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Languages</div>
+        <ul class="lang-list">
+          <li>Turkish</li>
+          <li>English</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Keywords</div>
+        <ul class="keyword-list">
+          <li>Engineering Management</li>
+          <li>Software Development</li>
+          <li>Embedded Systems</li>
+          <li>DevOps</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <header class="cv-header">
+        <div class="cv-name">Emin YILDIZ</div>
+        <div class="cv-title">Engineering Manager</div>
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:eyeminyildiz@outlook.com">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            eyeminyildiz@outlook.com
+          </a>
+          <a class="contact-item" href="https://linkedin.com/in/eyEminYILDIZ" target="_blank">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            linkedin.com/in/eyEminYILDIZ
+          </a>
+          <a class="contact-item" href="tel:+905303869234">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            +90 530 386 92 34
+          </a>
+          <a class="contact-item" href="https://github.com/eyEminYILDIZ" target="_blank">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            github.com/eyEminYILDIZ
+          </a>
+          <a class="contact-item" href="https://eminyildiz.com.tr" target="_blank">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            eminyildiz.com.tr
+          </a>
+          <a class="contact-item" href="https://medium.com/@eyEminYILDIZ" target="_blank">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+            medium.com/@eyEminYILDIZ
+          </a>
         </div>
-        <!-- Mobile menu end -->
-
-        <div class="avatar">
-          <img src="assets/images/profile.png" alt="avatar" />
-        </div>
-
-        <div class="name">
-          <h1>Emin YILDIZ</h1>
-          <span>Engineering Manager</span>
-        </div>
-
-        <br />
-
-        <!-- Social Icons -->
-        <div class="social-icons">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/eyeminyildiz/"
-                ><i class="fa fa-linkedin" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/eyEminYILDIZ"
-                ><i class="fa fa-github" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://medium.com/@eyEminYILDIZ"
-                ><i class="fa fa-medium" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <!-- Social Icons end -->
-
-        <br />
-
-        <!-- Navigation bar -->
-        <nav class="main-nav">
-          <ul class="navigation">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-          </ul>
-        </nav>
-        <!-- Navigation bar end -->
-
-        <br />
-
-        <!-- Footer Copyright -->
-        <div class="copyright">
-          <span>Content updated on 1 February 2026</span>
-          <br />
-          <span>Copyright © Designstub</span>
-        </div>
-        <!-- Footer Copyright end -->
       </header>
-      <!-- Header end -->
 
-      <!-- Main Content -->
-      <div class="main-content pull-right">
-        <!-- Section About -->
-        <section id="about" class="about">
-          <div class="section-header">
-            <h2>About Me</h2>
+      <section>
+        <div class="section-title">Experience</div>
+
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">Engineering Manager</span>
+            <span class="job-dates">May 2023 – Mar 2026</span>
           </div>
+          <div class="job-company">Tarim Kredi Teknoloji</div>
+          <ul class="job-bullets">
+            <li>Managed 5 scrum teams up to 25 people.</li>
+            <li>Participated in recruitment processes and conducted technical interviews.</li>
+            <li>Provided career guidance to the team members.</li>
+            <li>Had one-on-one meetings with team members.</li>
+            <li>Developed Toprak, KoopPOS, KoopEnerji projects from scratch.</li>
+            <li>Maintained legacy softwares.</li>
+            <li>Tracked outsourced projects.</li>
+            <li>Reported project and team status to upper management periodically.</li>
+            <li>Worked closely with Product Owners, Team Leads, Tech Leads and Upper Management.</li>
+          </ul>
+        </div>
 
-          <!-- Intro -->
-          <div class="intro">
-            <p>
-              I have been developing myself in the fields of Software
-              Development, Embedded Systems, DevOps and Engineering Management,
-              for more than 15 years. I like to work interdisciplinary and take
-              part in all processes of a product from idea stage to product
-              stage.
-            </p>
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">Engineering Team Lead</span>
+            <span class="job-dates">Apr 2021 – Apr 2023</span>
           </div>
-          <!-- Intro end -->
-        </section>
-        <!-- Section About end -->
+          <div class="job-company">Crosstech</div>
+          <ul class="job-bullets">
+            <li>Led a cross-functional software team.</li>
+            <li>Participated recruitment processes, conducted interviews.</li>
+            <li>Worked on backend, frontend and mobile side of projects.</li>
+            <li>Developed MTSK, GuideFM, QuisApp etc. projects from scratch.</li>
+          </ul>
+        </div>
 
-        <!-- Section Experience -->
-        <section id="experience" class="resume">
-          <div class="section-header">
-            <h2>Experience</h2>
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">Senior Software Engineer</span>
+            <span class="job-dates">Apr 2020 – Mar 2021</span>
           </div>
+          <div class="job-company">Crosstech</div>
+          <ul class="job-bullets">
+            <li>Worked with cross-functional software team.</li>
+            <li>Worked on backend, frontend and mobile side of projects.</li>
+            <li>Participated recruitment processes, conducted interviews.</li>
+          </ul>
+        </div>
 
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="top-item resume-item">
-                <h2>Engineering Manager</h2>
-                <span>Tarim Kredi Teknoloji | May 2023 - Present</span>
-                <p>
-                  I'm managing more than 5 software teams, up to 25 people. I'm
-                  working closely team leads, tech leads, product owners and
-                  upper managers. I'm actively participating projects below.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-project">
-                <h5>KoopPOS</h5>
-                <p>
-                  KoopPOS is modern, web-based cash register platform. It
-                  developed from scratch.
-                  <br />
-                  'KoopPOS Kooperatif' works on 1100+ coopertive locations.
-                  <br />
-                  'KoopPOS Market' actively under development and it is planning
-                  to be working on 2500+ market locations.
-                  <br />
-                  Languages: Dotnet 8, React
-                  <br />
-                  Running on: Kubernetes (headoffice), IIS (backoffice, store)
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-project">
-                <h5>KoopEnerji</h5>
-                <p>
-                  KoopEnerji is modern, web-based fuel automation system. It
-                  developed from scratch. Its actively testing in the fields.
-                  <br />
-                  Tarpet is old version of KoopEnerji. It works on 1600+
-                  location. We are maintaining it for 3 years.
-                  <br />
-                  Languages: Dotnet 8, React
-                  <br />
-                  Running on: Kubernetes (headoffice), IIS (station)
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-project">
-                <h5>Toprak</h5>
-                <p>
-                  Toprak is a enterprise software platform that consist
-                  corporational modules. It developed from scratch. It is using
-                  by 18 companies in Tarım Kredi Group. It's backend is
-                  microservice, have microfrontend web apps and mobile
-                  application
-                  <br />
-                  => 'EBYS' is electronic document management system. It uses by
-                  companies for sending and receiving official correspondences.
-                  It complies with official correspondence regulations.
-                  Documents can be signed with electronic signatures via mobile
-                  signatures or usb stick signatures.
-                  <br />
-                  => 'Digital Process System' is business process management
-                  module. It help building process quickly and effortless.
-                  <br />
-                  => 'Toprak AI' is a chatbot that knows users. We use self
-                  hosted custom Qwen3 local models and integrate it with our
-                  internal systems via MCP protocol. Users can use it for daily
-                  work needs on Toprak web app and Toprak mobile app.
-                  <br />
-                  => 'Self Service', 'Inventory Management System', 'Meeting
-                  Tracking System', 'Company Information System', 'Legislation
-                  Management System' are other modules that activel using by
-                  users.
-                  <br />
-                  Languages: Dotnet 8, React, React Native
-                  <br />
-                  Running on: Kubernetes
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-project">
-                <h5>KoopBakkal</h5>
-                <p>
-                  KoopBakkal is B2B ordering platform for small groceries.
-                  <br />
-                  We actively maintaining project and developing features.
-                  <br />
-                  Languages: Dotnet 8, Blazor, Flutter
-                  <br />
-                  Running on: IIS
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-item">
-                <h2>Software Team Lead</h2>
-                <span>Crosstech | Apr 2021 - Apr 2023</span>
-                <p>I lead to cross-functional team.</p>
-              </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-item">
-                <h2>Senior Software Developer</h2>
-                <span>Crosstech | Apr 2020 - Mar 2021</span>
-                <p>
-                  In cross-functional team; I worked on several projects backend
-                  and frontend sides.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-item">
-                <h2>Software Developer</h2>
-                <span>Crosstech | Oct 2019 - Mar 2020</span>
-                <p>
-                  In cross-functional team; I worked on several projects backend
-                  and frontend sides.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-item">
-                <h2>Software Developer</h2>
-                <span>Freelance | May 2017 - SEP 2018</span>
-                <p>
-                  I worked with freelance development team. We developed web
-                  based solutions for companies.
-                </p>
-              </div>
-            </div>
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">Software Engineer</span>
+            <span class="job-dates">Oct 2019 – Mar 2020</span>
           </div>
-        </section>
-        <!-- Section Experience end -->
+          <div class="job-company">Crosstech</div>
+          <ul class="job-bullets">
+            <li>Worked with cross-functional software team.</li>
+            <li>Worked on backend, frontend and mobile side of projects.</li>
+          </ul>
+        </div>
 
-        <!-- Section Education -->
-        <section id="education" class="resume">
-          <div class="section-header">
-            <h2>Education</h2>
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">Software Engineer</span>
+            <span class="job-dates">May 2017 – Sep 2018</span>
           </div>
+          <div class="job-company">Freelance</div>
+          <ul class="job-bullets">
+            <li>Worked with freelance team.</li>
+            <li>Developed web based solutions for companies.</li>
+          </ul>
+        </div>
 
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="top-item resume-item">
-                <h2>Kocaeli University (Turkey), Computer Engineering</h2>
-                <span>Bachelor's Degree | 2014 - 2019</span>
-                <p>
-                  I have graduated from Kocaeli University, Computer Engineering
-                  at 2019.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Section Education end -->
-      </div>
-      <!-- Main Content end -->
+      </section>
     </main>
-    <!-- Main Wrapper end -->
 
-    <!-- SCRIPTS -->
-    <script
-      type="text/javascript"
-      src="assets/js/jquery-1.12.3.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/js/jquery.onepage-scroll.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/js/jquery.easing.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/js/jquery.backstretch.min.js"
-    ></script>
-    <script type="text/javascript" src="assets/js/jquery.filterizr.js"></script>
-    <script
-      type="text/javascript"
-      src="assets/js/jquery.magnific-popup.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/bootstrap/js/bootstrap.min.js"
-    ></script>
-    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="assets/js/custom.js"></script>
-    <script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
-  </body>
+  </div>
+</body>
 </html>

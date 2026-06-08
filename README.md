@@ -2,4 +2,3 @@
 
 [https://eminyildiz.com.tr](https://eminyildiz.com.tr)
 
-Theme: Designstub
