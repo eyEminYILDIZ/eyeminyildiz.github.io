@@ -64,7 +64,7 @@ body {
 
 .sidebar-role {
   margin-top: 7px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
   line-height: 1.25;
@@ -85,7 +85,7 @@ body {
   margin-bottom: 14px;
 }
 
-.sidebar-identity + .sidebar-section p {
+.sidebar-identity+.sidebar-section p {
   font-size: 14px;
   line-height: 1.22;
   text-align: center;
@@ -230,7 +230,7 @@ body {
   line-height: 1;
 }
 
-.job + .job {
+.job+.job {
   border-top: 1px solid var(--rule);
   padding-top: 17px;
 }
@@ -266,7 +266,7 @@ body {
     min-width: 0;
   }
 
-  .sidebar-identity + .sidebar-section p {
+  .sidebar-identity+.sidebar-section p {
     max-width: 520px;
     margin-left: auto;
     margin-right: auto;
